@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Remove="compilerconfig.json" />
+      <Content Remove="Pages\FetchData.razor" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\vars.css" />
+      <Content Update="Shared\Tile.razor">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="compilerconfig.json" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+﻿@using Microsoft.AspNetCore.Components
+
+<div class="tile @(IsMain(Main))">
+    @ChildContent
+</div>
+
+
+@code {
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public string Main { get; set; }
+
+    public static string IsMain(string x) =>
+        x is null ? "" : "main";
+}

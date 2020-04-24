@@ -1,0 +1,93 @@
+@import './vars.scss';
+
+@import './pages/index.scss';
+
+
+html, body {
+    background: $background;
+    color: $text-color;
+
+    margin: 0;
+    display: block;
+}
+
+button {
+    background: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    border: none;
+    border-radius: .5vh;
+    padding: 1vh;
+    font-family: 'Karla';
+    color: #eee;
+}
+
+h1 {
+    font-family: $font-title;
+    text-align: center;
+    font-size: 7.5vh;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: $font-paragraph;
+    font-size: 2vh;
+}
+
+footer {
+    font-family: $font-footer;
+    font-size: 1.25vh;
+    letter-spacing: .25px;
+    color: rgba(255, 255, 255, .15);
+    text-align: center;
+}
+
+/*
+    Main classes
+*/
+
+#navbar {
+    height: 8vh;
+    width: 100%;
+
+    & img {
+        height: 7.5vh;
+        width: 7.5vh;
+
+        padding: 1vh 0 0 0;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.tile {
+    height: 75vh;
+    width: 100%;
+
+    &.main {
+        height: 85vh !important;
+    }
+}
+
+/*
+    Specific classes
+*/
+
+.jvmp-center {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.jvmp-row {
+    flex-direction: row;
+}
+
+/*
+    Blazor classes
+*/
+
+#components-reconnect-modal {
+    background-color: #000;
+}
